@@ -1,0 +1,81 @@
+{
+  "$schema": "https://biomejs.dev/schemas/2.2.0/schema.json",
+  "formatter": {
+    "enabled": true,
+    "indent_size": 2,
+    "line_width": 100,
+    "quote_style": "double",
+    "trailing_commas": "all",
+    "bracket_spacing": true,
+    "semi": true,
+    "arrow_parentheses": "always",
+    "bracket_same_line": false
+  },
+  "linter": {
+    "enabled": true,
+    "rules": {
+      "recommended": true,
+      "brace-style": ["error", "1tbs", { "allowSingleLine": true }],
+      "camelcase": ["error", { "properties": "always" }],
+      "comma-dangle": ["error", "always-multiline"],
+      "eqeqeq": ["error", "always", { "null": "ignore" }],
+      "no-console": ["warn", { "allow": ["warn", "error"] }],
+      "no-debugger": "error",
+      "no-unused-vars": ["error", { "vars": "all", "args": "after-used", "ignoreRestSiblings": true }],
+      "semi": ["error", "always"],
+      "quotes": ["error", "double", { "avoidEscape": true }],
+      "max-len": ["warn", { "code": 100, "ignoreUrls": true }],
+      "prefer-const": "error",
+      "no-var": "error",
+      "no-duplicate-imports": "error",
+      "no-shadow": "error",
+      "no-use-before-define": ["error", { "functions": false, "classes": true }],
+      "indent": ["error", 2],
+      "strict": "error"
+    }
+  },
+  "analyzer": {
+    "enabled": true,
+    "targets": {
+      "js": true,
+      "ts": true,
+      "vue": true,
+      "jsx": true,
+      "tsx": true,
+      "css": true,
+      "scss": true
+    }
+  },
+  "files": {
+    "include": [
+      "**/*.js",
+      "**/*.ts",
+      "**/*.tsx",
+      "**/*.jsx",
+      "**/*.vue",
+      "**/*.css",
+      "**/*.scss"
+    ],
+    "exclude": [
+      "node_modules",
+      "dist",
+      "build",
+      "coverage"
+    ]
+  },
+  "plugins": [
+    "vue",
+    "react",
+    "angular"
+  ],
+  "assist": {
+    "enabled": true,
+    "actions": {
+      "source": {
+        "suggestFixes": "on",
+        "organizeImports": "on",
+        "fixAll": "on"
+      }
+    }
+  }
+}

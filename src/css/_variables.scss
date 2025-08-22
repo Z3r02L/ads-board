@@ -1,0 +1,49 @@
+// variables.scss
+
+// Цвета
+$color-primary: #3b82f6;
+$color-secondary: #ff6f61;
+$color-accent: #f5a623;
+$color-background: #f5f5f7;
+$color-text-primary: #222222;
+$color-text-secondary: #666666;
+$color-border: #e0e0e0;
+
+// Шрифты
+$font-family-base: system, 'Roboto', sans-serif;
+$font-family-heading: 'Montserrat', sans-serif;
+
+// Размеры шрифтов
+$font-size-base: 16px;
+$font-size-sm: 14px;
+$font-size-lg: 20px;
+$font-size-xl: 24px;
+$font-size-xxl: 32px;
+
+// Отступы (margin/padding)
+$spacing-xs: 4px;
+$spacing-sm: 8px;
+$spacing-md: 16px;
+$spacing-lg: 24px;
+$spacing-xl: 32px;
+
+// Радиусы бордюров
+$border-radius-sm: 4px;
+$border-radius-md: 8px;
+$border-radius-lg: 12px;
+
+// Тени
+// $box-shadow-light: 0 1px 3px rgba(0, 0, 0, 0.12);
+// $box-shadow-medium: 0 4px 6px rgba(0, 0, 0, 0.1);
+// $box-shadow-heavy: 0 10px 20px rgba(0, 0, 0, 0.15);
+
+// transition
+// $transition-fast: 0.2s ease-in-out;
+// $transition-medium: 0.4s ease-in-out;
+
+// Высоты элементов
+$header-height: 138px;
+$footer-height: 80px;
+
+// Максимальная ширина контейнера
+$container-max-width: 1200px;

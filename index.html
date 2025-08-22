@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8" />
+	<link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Доска объявлений</title>
+	<link rel="stylesheet" href="/src/css/resetCSS.css">
+	<link rel="stylesheet" href="/src/css/style.scss">
+</head>
+<body>
+  <header class="header">
+		<div class="header-top">
+			<div class="header-top__wrap container">
+				<div class="btn">Войти</div>
+				<button	class="btn-primary">Новое объявление +</button>
+			</div>
+		</div>
+		<div class="header-bot container">
+      <h1>Доска объявлений</h1>
+      <button>Все категории</button>
+      <input type="text" placeholder="Поиск по объявлениям" />
+			<button>Найти</button>
+		</div>
+  </header>
+
+  <main>
+    <h2>Рекомендации для вас</h2>
+    <section class="ads-grid">
+      <article class="ad-card">
+        <img src="/images/grid/guitar1.jpg" alt="Картинка объявления" />
+        <a href="#">Гитара Fender</a>
+        <div>20 000 ₽</div>
+        <div>Москва, Ленинский проспект</div>
+        <div>Сегодня 14:12</div>
+      </article>
+      <!-- Повторяющиеся объявления -->
+      <article class="ad-card">
+        <img src="/images/grid/art.jpg" alt="Картинка объявления" />
+        <a href="#">Гитара Fender</a>
+        <div>20 000 ₽</div>
+        <div>Москва, Ленинский проспект</div>
+        <div>Сегодня 14:12</div>
+      </article>
+			 <article class="ad-card">
+        <img src="/images/grid/guitar.jpg" alt="Картинка объявления" />
+        <a href="#">Гитара Fender</a>
+        <div>20 000 ₽</div>
+        <div>Москва, Ленинский проспект</div>
+        <div>Сегодня 14:12</div>
+      </article>
+      <!-- ...и так далее -->
+    </section>
+  </main>
+
+	<footer>
+		
+	</footer>
+</body>
+</html>

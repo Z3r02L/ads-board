@@ -1,0 +1,97 @@
+# editorconfig.org
+root = true
+
+# Общие правила для всех файлов
+[*]
+charset = utf-8
+end_of_line = lf
+insert_final_newline = true
+trim_trailing_whitespace = true
+indent_style = space
+indent_size = 2
+
+# Markdown
+[*.md]
+trim_trailing_whitespace = false
+
+### Frontend ###
+# HTML
+[*.html]
+indent_style = space
+indent_size = 2
+trim_trailing_whitespace = false
+
+# CSS, SCSS, SASS
+[*.{css,scss,sass}]
+indent_style = space
+indent_size = 2
+
+# JavaScript
+[*.js]
+indent_style = space
+indent_size = 2
+max_line_length = 120
+
+# TypeScript
+[*.ts]
+indent_style = space
+indent_size = 2
+max_line_length = 120
+
+# Angular шаблоны (HTML, TS)
+[*.component.html]
+indent_style = space
+indent_size = 2
+
+[*.component.ts]
+indent_style = space
+indent_size = 2
+
+# Vue файлы
+[*.vue]
+indent_style = space
+indent_size = 2
+max_line_length = 120
+trim_trailing_whitespace = false
+
+### Backend ###
+# Go
+[*.go]
+indent_style = tab
+indent_size = 4
+trim_trailing_whitespace = true
+insert_final_newline = true
+max_line_length = 100
+
+# Python
+[*.py]
+indent_style = space
+indent_size = 4
+max_line_length = 79
+trim_trailing_whitespace = true
+insert_final_newline = true
+
+# C#
+[*.cs]
+indent_style = space
+indent_size = 4
+max_line_length = 120
+insert_final_newline = true
+trim_trailing_whitespace = true
+
+# Java
+[*.{java,j}]
+indent_style = space
+indent_size = 4
+max_line_length = 120
+insert_final_newline = true
+trim_trailing_whitespace = true
+
+# Kotlin
+[*.kt]
+indent_style = space
+indent_size = 4
+max_line_length = 120
+insert_final_newline = true
+trim_trailing_whitespace = true
+
