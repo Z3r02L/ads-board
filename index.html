@@ -10,36 +10,199 @@
 </head>
 <body>
   <header class="header">
-  <div class="header__top">
-  	<div class="header__top-wrap container">
-  		<button class="btn btn--login">
-  			<img src="/images/person.svg" alt="person" srcset="">Войти
-  		</button>
-  		<button	class="btn btn--primary">
-  			Новое объявление +
-  		</button>
-  	</div>
-  </div>
-  <div class="header__bot container">
+    <div class="header__top">
+    	<div class="header__top-wrap container">
+    		<button class="btn btn--login">
+    			<img src="/images/person.svg" alt="person" srcset="">Войти
+    		</button>
+    		<button	class="btn btn--primary">
+    			Новое объявление +
+    		</button>
+    	</div>
+    </div>
+    <div class="header__bot container">
       <h1 class="header__title">Доска объявлений</h1>
       <button class="btn btn--category"> <span class="hamburger"></span>Все категории</button>
-    <div class="header__search">
-      <input type="text" class="header__search-input" placeholder="Поиск по объявлениям" />
-      <button class="btn btn--search">Найти</button>
+      <div class="header__search">
+        <input type="text" class="header__search-input" placeholder="Поиск по объявлениям" />
+        <button class="btn btn--search">Найти</button>
+      </div>
     </div>
-  </div>
   </header>
 
   <section class="catalog container">
     <div class="catalog__title">
       Рекомендации для вас
     </div>
-    <div class="catalog__grid"></div>
+    <div class="catalog__grid">
+
+      <!-- Преобразовать в компонент AdCard -->
+      <div class="ad-card">
+        <img class="ad-card__image" src="/images/grid/guitar.jpg" alt="Гитара Fender" />
+        <div class="ad-card__body">
+          <a href="${data.url || '#'}" class="ad-card__title">Гитара Fender</a>
+          <div class="ad-card__price">20 000 ₽</div>
+          <div class="ad-card__location">Москва</div>
+          <div class="ad-card__date">Сегодня 14:12</div>
+        </div>
+      </div>
+      <!-- Конец компонента -->
+
+      <div class="ad-card">
+        <img class="ad-card__image" src="/images/grid/car.jpg" alt="Ford Mustang 5.0 AT, 2019, 66 000 км" />
+        <div class="ad-card__body">
+          <a href="${data.url || '#'}" class="ad-card__title">Ford Mustang 5.0 AT, 2019, 66 000 км</a>
+          <div class="ad-card__price">3 500 000 ₽</div>
+          <div class="ad-card__location">Симферополь</div>
+          <div class="ad-card__date">Вчера 19:59</div>
+        </div>
+      </div>
+    
+      <div class="ad-card">
+        <img class="ad-card__image" src="/images/grid/new_phone.jpg" alt="iPhone 13 mini, 128 ГБ" />
+        <div class="ad-card__body">
+          <a href="${data.url || '#'}" class="ad-card__title">iPhone 13 mini, 128 ГБ</a>
+          <div class="ad-card__price">13 990 ₽</div>
+          <div class="ad-card__location">Севастополь</div>
+          <div class="ad-card__date">21 августа 10:03</div>
+        </div>
+      </div>
+    
+      <div class="ad-card">
+        <img class="ad-card__image" src="/images/grid/coffee.jpg" alt="Кофемашина DeLonghi" />
+        <div class="ad-card__body">
+          <a href="${data.url || '#'}" class="ad-card__title">Кофемашина DeLonghi</a>
+          <div class="ad-card__price">35 000 ₽</div>
+          <div class="ad-card__location">Санкт-Петербург</div>
+          <div class="ad-card__date">Сегодня 9:45</div>
+        </div>
+      </div>
+    
+      <div class="ad-card">
+        <img class="ad-card__image" src="/images/grid/ps5.jpg" alt="Sony PlayStation 5" />
+        <div class="ad-card__body">
+          <a href="${data.url || '#'}" class="ad-card__title">Sony PlayStation 5</a>
+          <div class="ad-card__price">45 000 ₽</div>
+          <div class="ad-card__location">Казань</div>
+          <div class="ad-card__date">Сегодня 11:30</div>
+        </div>
+      </div>
+    
+      <div class="ad-card">
+        <img class="ad-card__image" src="/images/grid/phone.jpg" alt="Смартфон Samsung Galaxy S22, 256 ГБ" />
+        <div class="ad-card__body">
+          <a href="${data.url || '#'}" class="ad-card__title">Смартфон Samsung Galaxy S22, 256 ГБ</a>
+          <div class="ad-card__price">65 000 ₽</div>
+          <div class="ad-card__location">Екатеринбург</div>
+          <div class="ad-card__date">Сегодня 15:20</div>
+        </div>
+      </div>
+    
+      <div class="ad-card">
+        <img class="ad-card__image" src="/images/grid/laptop.jpg" alt="Компьютер Apple MacBook Pro 2021" />
+        <div class="ad-card__body">
+          <a href="${data.url || '#'}" class="ad-card__title">Компьютер Apple MacBook Pro 2021</a>
+          <div class="ad-card__price">150 000 ₽</div>
+          <div class="ad-card__location">Новосибирск</div>
+          <div class="ad-card__date">Вчера 21:15</div>
+        </div>
+      </div>
+    
+      <div class="ad-card">
+        <img class="ad-card__image" src="/images/grid/clock.jpg" alt="Часы Rolex Submariner" />
+        <div class="ad-card__body">
+          <a href="${data.url || '#'}" class="ad-card__title">Часы Rolex Submariner</a>
+          <div class="ad-card__price">350 000 ₽</div>
+          <div class="ad-card__location">Москва</div>
+          <div class="ad-card__date">Вчера 17:05</div>
+        </div>
+      </div>
+    
+      <div class="ad-card">
+        <img class="ad-card__image" src="/images/grid/motorcycle.jpg" alt="Часы Rolex Submariner" />
+        <div class="ad-card__body">
+          <a href="${data.url || '#'}" class="ad-card__title">Часы Rolex Submariner</a>
+          <div class="ad-card__price">350 000 ₽</div>
+          <div class="ad-card__location">Москва</div>
+          <div class="ad-card__date">Вчера 17:05</div>
+        </div>
+      </div>
+    
+      <div class="ad-card">
+        <img class="ad-card__image" src="/images/grid/guitar.jpg" alt="Гитара Fender" />
+        <div class="ad-card__body">
+          <a href="${data.url || '#'}" class="ad-card__title">Гитара Fender</a>
+          <div class="ad-card__price">20 000 ₽</div>
+          <div class="ad-card__location">Москва</div>
+          <div class="ad-card__date">Сегодня 14:12</div>
+        </div>
+      </div>
+    
+      <div class="ad-card">
+        <img class="ad-card__image" src="/images/grid/car.jpg" alt="Ford Mustang 5.0 AT, 2019, 66 000 км" />
+        <div class="ad-card__body">
+          <a href="${data.url || '#'}" class="ad-card__title">Ford Mustang 5.0 AT, 2019, 66 000 км</a>
+          <div class="ad-card__price">3 500 000 ₽</div>
+          <div class="ad-card__location">Симферополь</div>
+          <div class="ad-card__date">Вчера 19:59</div>
+        </div>
+      </div>
+    
+      <div class="ad-card">
+        <img class="ad-card__image" src="/images/grid/new_phone.jpg" alt="iPhone 13 mini, 128 ГБ" />
+        <div class="ad-card__body">
+          <a href="${data.url || '#'}" class="ad-card__title">iPhone 13 mini, 128 ГБ</a>
+          <div class="ad-card__price">13 990 ₽</div>
+          <div class="ad-card__location">Севастополь</div>
+          <div class="ad-card__date">21 августа 10:03</div>
+        </div>
+      </div>
+    
+      <div class="ad-card">
+        <img class="ad-card__image" src="/images/grid/coffee.jpg" alt="Кофемашина DeLonghi" />
+        <div class="ad-card__body">
+          <a href="${data.url || '#'}" class="ad-card__title">Кофемашина DeLonghi</a>
+          <div class="ad-card__price">35 000 ₽</div>
+          <div class="ad-card__location">Санкт-Петербург</div>
+          <div class="ad-card__date">Сегодня 9:45</div>
+        </div>
+      </div>
+    
+      <div class="ad-card">
+        <img class="ad-card__image" src="/images/grid/ps5.jpg" alt="Sony PlayStation 5" />
+        <div class="ad-card__body">
+          <a href="${data.url || '#'}" class="ad-card__title">Sony PlayStation 5</a>
+          <div class="ad-card__price">45 000 ₽</div>
+          <div class="ad-card__location">Казань</div>
+          <div class="ad-card__date">Сегодня 11:30</div>
+        </div>
+      </div>
+    
+      <div class="ad-card">
+        <img class="ad-card__image" src="/images/grid/phone.jpg" alt="Смартфон Samsung Galaxy S22, 256 ГБ" />
+        <div class="ad-card__body">
+          <a href="${data.url || '#'}" class="ad-card__title">Смартфон Samsung Galaxy S22, 256 ГБ</a>
+          <div class="ad-card__price">65 000 ₽</div>
+          <div class="ad-card__location">Екатеринбург</div>
+          <div class="ad-card__date">Сегодня 15:20</div>
+        </div>
+      </div>
+    
+      <div class="ad-card">
+        <img class="ad-card__image" src="/images/grid/laptop.jpg" alt="Компьютер Apple MacBook Pro 2021" />
+        <div class="ad-card__body">
+          <a href="${data.url || '#'}" class="ad-card__title">Компьютер Apple MacBook Pro 2021</a>
+          <div class="ad-card__price">150 000 ₽</div>
+          <div class="ad-card__location">Новосибирск</div>
+          <div class="ad-card__date">Вчера 21:15</div>
+        </div>
+      </div>
+    </div>
   </section>
 
 	<footer>
 		
 	</footer>
-  <script type="module" src="/src/ts/main.ts"></script>
+  <!-- <script type="module" src="/src/ts/main.ts"></script> -->
 </body>
 </html>
