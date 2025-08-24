@@ -10,51 +10,36 @@
 </head>
 <body>
   <header class="header">
-		<div class="header-top">
-			<div class="header-top__wrap container">
-				<div class="btn">Войти</div>
-				<button	class="btn-primary">Новое объявление +</button>
-			</div>
-		</div>
-		<div class="header-bot container">
-      <h1>Доска объявлений</h1>
-      <button>Все категории</button>
-      <input type="text" placeholder="Поиск по объявлениям" />
-			<button>Найти</button>
-		</div>
+  <div class="header__top">
+  	<div class="header__top-wrap container">
+  		<button class="btn btn--login">
+  			<img src="/images/person.svg" alt="person" srcset="">Войти
+  		</button>
+  		<button	class="btn btn--primary">
+  			Новое объявление +
+  		</button>
+  	</div>
+  </div>
+  <div class="header__bot container">
+      <h1 class="header__title">Доска объявлений</h1>
+      <button class="btn btn--category"> <span class="hamburger"></span>Все категории</button>
+    <div class="header__search">
+      <input type="text" class="header__search-input" placeholder="Поиск по объявлениям" />
+      <button class="btn btn--search">Найти</button>
+    </div>
+  </div>
   </header>
 
-  <main>
-    <h2>Рекомендации для вас</h2>
-    <section class="ads-grid">
-      <article class="ad-card">
-        <img src="/images/grid/guitar1.jpg" alt="Картинка объявления" />
-        <a href="#">Гитара Fender</a>
-        <div>20 000 ₽</div>
-        <div>Москва, Ленинский проспект</div>
-        <div>Сегодня 14:12</div>
-      </article>
-      <!-- Повторяющиеся объявления -->
-      <article class="ad-card">
-        <img src="/images/grid/art.jpg" alt="Картинка объявления" />
-        <a href="#">Гитара Fender</a>
-        <div>20 000 ₽</div>
-        <div>Москва, Ленинский проспект</div>
-        <div>Сегодня 14:12</div>
-      </article>
-			 <article class="ad-card">
-        <img src="/images/grid/guitar.jpg" alt="Картинка объявления" />
-        <a href="#">Гитара Fender</a>
-        <div>20 000 ₽</div>
-        <div>Москва, Ленинский проспект</div>
-        <div>Сегодня 14:12</div>
-      </article>
-      <!-- ...и так далее -->
-    </section>
-  </main>
+  <section class="catalog container">
+    <div class="catalog__title">
+      Рекомендации для вас
+    </div>
+    <div class="catalog__grid"></div>
+  </section>
 
 	<footer>
 		
 	</footer>
+  <script type="module" src="/src/ts/main.ts"></script>
 </body>
 </html>

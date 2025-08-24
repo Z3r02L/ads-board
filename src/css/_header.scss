@@ -1,0 +1,51 @@
+@use 'variables' as vars;
+
+.header {
+	&__top {
+		height: 3.25rem;
+		background: vars.$color-dark-blue;
+
+		&-wrap {
+			display: flex;
+			justify-content: flex-end;
+			align-items: center;
+			gap: 1.5rem;
+			height: 100%;
+		}
+	}
+
+	&__bot {
+		display: flex;
+    justify-content: space-between;
+		align-items: center;
+		gap: 1.5rem 0.75rem;
+		height: 5.25rem;
+	}
+
+	&__title {
+    font-weight: 600;
+    font-size: 1.5rem;
+    line-height: 133%;
+		color: vars.$color-dark-blue;
+	}
+
+  &__search {
+			display: flex;
+			align-items: center;
+      width: 820px;
+			height: 5.25rem;
+
+      &-input {
+        flex-grow: 1;
+        padding: 0rem 0.75rem;
+        border: 1px solid vars.$color-light-gray;
+        border-radius: 0.25rem 0 0 0.25rem;
+        height: 2.25rem;
+        color: vars.$color-gray;
+
+        &::placeholder {
+          color: vars.$color-gray;
+        }
+      }
+	}
+}

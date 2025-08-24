@@ -1,0 +1,41 @@
+@use 'variables' as vars;
+
+.ad-card {
+  box-shadow: 0 1px 6px vars.$color-shadow;
+  width: 18.75rem;
+  height: 22.5rem;
+
+  &__image {
+    width: 100%;
+    height: 15rem;
+    object-fit: cover;
+    display: block;
+  }
+
+  &__body {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__title {
+    margin-top: 0.5rem;
+    font-weight: 600;
+    font-size: 1.12rem;
+    line-height: 133%;
+    text-decoration: none;
+    color: vars.$color-blue;
+  }
+
+  &__price {
+    font-weight: 600;
+    font-size: 1.12rem;
+    line-height: 133%;
+  }
+
+  &__location, &__date {
+    font-weight: 400;
+    font-size: 0.88rem;
+    line-height: 143%;
+    color: vars.$color-gray;
+  }
+}

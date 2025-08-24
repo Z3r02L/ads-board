@@ -1,0 +1,14 @@
+.catalog {
+  margin-top: 2rem;
+
+  &__title{
+  }
+
+  &__grid {
+    margin-top: 1.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 1.5rem 0.75rem;
+  }
+}
