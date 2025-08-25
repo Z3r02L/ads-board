@@ -1,15 +1,23 @@
 @use 'variables' as vars;
 
 .ad-card {
-  box-shadow: 0 1px 6px vars.$color-shadow;
+
   width: 18.75rem;
   height: 22.5rem;
+  box-shadow: 0 1px 6px vars.$color-shadow;
+  border-radius: vars.$ad-border-radius;
+  transition: box-shadow 0.3s ease;
+
+  &:hover {
+    box-shadow: 0 4px 32px 0 rgba(59, 130, 246, 0.6);
+  }
 
   &-image {
     width: 100%;
     height: 15rem;
-    object-fit: cover;
     display: block;
+    border-radius: vars.$ad-border-radius;
+    object-fit: cover;
   }
 
   &-body {
@@ -18,7 +26,7 @@
   }
 
   &-title {
-    margin-top: 0.5rem;
+    margin: vars.$ad-margin-title;
     font-weight: 600;
     font-size: 1.12rem;
     line-height: 133%;
@@ -27,12 +35,14 @@
   }
 
   &-price {
+    margin: vars.$ad-margin-text;
     font-weight: 600;
     font-size: 1.12rem;
     line-height: 133%;
   }
 
   &-location, &-date {
+    margin: vars.$ad-margin-text;
     font-weight: 400;
     font-size: 0.88rem;
     line-height: 143%;

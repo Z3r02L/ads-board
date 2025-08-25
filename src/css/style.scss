@@ -8,12 +8,6 @@
 
 @use 'footer';
 
-.container {
-	margin: 0 auto;
-	max-width: vars.$container-max-width;
-}
-
-
 // Доделать адаптив
 @media (max-width: 900px) {
   .ad-card {

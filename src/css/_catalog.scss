@@ -1,14 +1,25 @@
+@use 'variables' as vars;
+
 .catalog {
   margin-top: 2rem;
 
+  &-wrap {
+    max-width: vars.$wrap-max-width;
+    margin: 0 auto;
+    padding: vars.$wrap-padding;
+  }
+
   &-title{
+    font-weight: 600;
+    font-size: 1.5rem;
+    line-height: 133%;
   }
 
   &-grid {
     margin-top: 1.5rem;
+    gap: vars.$catalog-grid-gap;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    gap: 1.5rem 0.75rem;
   }
 }
