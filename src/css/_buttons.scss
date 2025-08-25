@@ -21,6 +21,10 @@
 
 	&--login {
     background: vars.$color-dark-blue;
+
+    &:hover {
+      color: #ffe960;
+    }
 	}
 
 	&--category {

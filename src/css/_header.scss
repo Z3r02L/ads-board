@@ -2,13 +2,20 @@
 
 .header {
 	&-top {
+    display: flex;
+    justify-content: space-around;
 		height: 3.25rem;
+    align-items: center;
 		background: vars.$color-dark-blue;
+
+    & .container {
+      width: 1296px;
+      display: flex;
+      justify-content: space-between;
+    }
 
 		&-wrap {
 			display: flex;
-			justify-content: flex-end;
-			align-items: center;
 			gap: 1.5rem;
 			height: 100%;
 		}
