@@ -13,6 +13,8 @@
 	max-width: vars.$container-max-width;
 }
 
+
+// Доделать адаптив
 @media (max-width: 900px) {
   .ad-card {
     flex: 1 1 calc(50% - 16px); /* Две карточки в ряд */
